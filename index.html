@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      :root {
+        --font-primary: #514f48;
+        --font-secondary: #929290;
+        --color-accent: #fe5f95;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background: linear-gradient(135deg in oklab, #fcd369, #ff5dca);
+        font-family: "Poppins", sans-serif;
+        color: var(--font-primary);
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 15px;
+        min-width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      .card__pic {
+        width: 230px;
+        height: 230px;
+        border-radius: 15px;
+        margin-top: -70px;
+        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+      }
+
+      .card__name {
+        font-size: 25px;
+        margin-top: 15px;
+      }
+
+      .card__location {
+        font-size: 15px;
+        color: var(--font-secondary);
+      }
+
+      .card__info {
+        margin: 15px 0 30px;
+      }
+
+      .card__info span {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .btn-primary {
+        background-color: var(--color-accent);
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .btn-primary:hover {
+        background-color: #ff4f89;
+      }
+
+      .icon-gender {
+        -webkit-text-stroke: 1px;
+      }
+
+      .bi-gender-male {
+        color: cornflowerblue;
+      }
+
+      .bi-gender-female {
+        color: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- <div class="card">
+        <img
+          class="card__pic"
+          src="https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1492"
+          alt="user's avatar"
+        />
+        <h1 class="card__name">
+          <i class="bi bi-gender-male icon-gender"></i> Draco Malfoy
+        </h1>
+        <p class="card__location">
+          <i class="bi bi-geo-alt-fill"></i> Kyrgyzstan, Bishkek
+        </p>
+        <div class="card__info">
+          <p><span>Email:</span>esma.tekand@example.com</p>
+          <p><span>Username:</span>biggorilla430</p>
+          <p><span>Date of Birth:</span>1945-02-18</p>
+          <p><span>Age:</span>27</p>
+          <p><span>Phone:</span>(857)-995-1675</p>
+        </div>
+        <button id="next-btn" class="btn-primary">Next</button>
+      </div> -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
